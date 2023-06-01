@@ -1,0 +1,184 @@
+/* Add your CSS styles here */
+
+/* Navbar */
+
+#nav-menu {
+  position: sticky;
+  top: 0%;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  #nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #nav-menu li {
+    margin: 0 10px;
+  }
+  
+  #nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  #nav-menu a:hover {
+    background-color: #555;
+  }
+  
+/* Home Section */
+#home {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 50px;
+}
+
+.home-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f8f8f8;
+  padding: 50px;
+}
+
+.skills-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.skills-card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.skills-card-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #fff;
+  padding: 50px;
+}
+
+.project-card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}
+
+.project-tech-stack {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.project-github-link,
+.project-deployed-link {
+  display: inline-block;
+  margin-right: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.project-github-link:hover,
+.project-deployed-link:hover {
+  color: #555;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+#user-detail-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#user-detail-intro {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+#contact-github,
+#contact-linkedin,
+#contact-phone,
+#contact-email {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Resume Section */
+#resume {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+#resume-button-1,
+#resume-button-2 {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#resume-button-1:hover,
+#resume-button-2:hover {
+  background-color: #555;
+}
+
+  
