@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>my Portfolio</h1>
+  <nav id="nav-menu">
+    <ul>
+      <li><a href="#home" class="nav-link home">Home</a></li>
+      <li><a href="#about" class="nav-link about">About</a></li>
+      <li><a href="#skills" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li><a href="path/to/resume.pdf" class="nav-link resume">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <img src="https://drive.google.com/file/d/1X9YgdjzVCX94usQRW-1PBtrBLopx_Q0q/view?usp=drive_link" alt="Professional Photo" class="home-img">
+    <!-- Other content for the home section -->
+  </section>
+
+  <section id="about" class="about section">
+    <h2>About Section</h2>
+    <!-- Other content for the about section -->
+  </section>
+
+  <section id="skills">
+    <h2>Skills Section</h2>
+    <!-- Skills cards -->
+    <div class="skills-card">
+      <img src="path/to/skill-image.jpg" alt="Skill" class="skills-card-img">
+      <p class="skills-card-name">Skill Name</p>
+    </div>
+    <!-- Other skills cards -->
+  </section>
+
+  <section id="projects">
+    <h2>Projects Section</h2>
+    <!-- Project cards -->
+    <div class="project-card">
+      <img src="path/to/project-image.jpg" alt="Project">
+      <h3 class="project-title">Project Title</h3>
+      <p class="project-description">Project Description</p>
+      <p class="project-tech-stack">Tech Stack Used</p>
+      <a href="https://github.com/project-repo" class="project-github-link">GitHub Repository</a>
+      <a href="https://project-demo.com" class="project-deployed-link">Deployed Link</a>
+    </div>
+    <!-- Other project cards -->
+  </section>
+
+  <section id="contact">
+    <h2>Contact Section</h2>
+    <p id="user-detail-name">Your Name</p>
+    <p id="user-detail-intro">Formal Introduction</p>
+    <a href="https://github.com/your-profile" id="contact-github">GitHub</a>
+    <a href="https://linkedin.com/in/your-profile" id="contact-linkedin">LinkedIn</a>
+    <p id="contact-phone">Phone Number</p>
+    <p id="contact-email">Email Address</p>
+  </section>
+
+  <section id="resume">
+    <h2>Resume Section</h2>
+    <button id="resume-button-1">Open Resume</button>
+    <a href="path/to/resume.pdf" id="resume-link-1" download>Download Resume</a>
+    <!-- Other content for the resume section -->
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
