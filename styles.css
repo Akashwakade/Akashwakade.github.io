@@ -2,10 +2,14 @@
 
 /* Navbar */
 
+body{
+  background-color: #0a192f;
+}
 #nav-menu {
+  
   position: sticky;
   top: 0%;
-    background-color: #333;
+  background-color: #0a192f;
     padding: 10px;
   }
   
@@ -33,9 +37,10 @@
   
 /* Home Section */
 #home {
-  background-color: #f8f8f8;
+  background-color: #0a192f;
   text-align: center;
   padding: 50px;
+
 }
 
 .home-img {
@@ -48,19 +53,19 @@
 
 /* About Section */
 #about {
-  background-color: #fff;
+  background-color: #0a192f;
   padding: 50px;
   text-align: center;
 }
 
 /* Skills Section */
 #skills {
-  background-color: #f8f8f8;
+  background-color: #0a192f;
   padding: 50px;
 }
 
 .skills-card {
-  background-color: #fff;
+  background-color: #0a192f;
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -83,16 +88,32 @@
 
 /* Projects Section */
 #projects {
-  background-color: #fff;
+  width: 80%;
+  background-color: #0a192f;
   padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:25px;
+  margin: auto;
 }
 
 .project-card {
+  /* border: 2px solid black; */
   background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  transition: transform 0.3s ease;
+  /* margin-bottom: 20px; */
+  /* width:400px;
+  height: 500px; */
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+  
+}
+.project-card:hover{
+  transform: scale(1.1);
 }
 
 .project-card img {
@@ -133,7 +154,7 @@
 
 /* Contact Section */
 #contact {
-  background-color: #f8f8f8;
+  background-color: #0a192f;
   padding: 50px;
   text-align: center;
 }
@@ -159,7 +180,7 @@
 
 /* Resume Section */
 #resume {
-  background-color: #fff;
+  background-color: #0a192f;
   padding: 50px;
   text-align: center;
 }
@@ -181,4 +202,16 @@
   background-color: #555;
 }
 
+/* Media query for large screens */
+@media (min-width: 1024px) {
+  #projects {
+    width: 80%;
+    background-color: #0a192f;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px;
+    margin: auto;
+  }
+}
   
