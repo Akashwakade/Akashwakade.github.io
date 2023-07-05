@@ -58,6 +58,11 @@ body{
   text-align: center;
 }
 
+#about>h1{
+  font-family: sans-serif;
+  color:white
+}
+
 /* Skills Section */
 #skills {
   background-color: #0a192f;
