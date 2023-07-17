@@ -2,9 +2,55 @@
 
 /* Navbar */
 
-body{
-  background-color: #0a192f;
+/* body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  /* background-color: #000; */
+  /* background-image: linear-gradient(10deg, #003366, #0099cc); */
+  /* animation: stars 7s linear infinite; */
+ /* } */ */
+
+ {@keyframes highlight {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: transparent;
+  }
+}}
+
+.highlighted {
+  animation: highlight 0.5s infinite;
 }
+
+/* Other styles for your portfolio */
+body {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  background-color: #000;
+  color: #fff;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: crimson;
+shape-outside:radial-gradient();
+  transition: background-color 2s linear;
+}
+
+.name:hover {
+  color:black;
+  background-color: rgb(0, 255, 208);
+}
+
+
 #nav-menu {
   
   position: sticky;
@@ -37,7 +83,7 @@ body{
   
 /* Home Section */
 #home {
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   text-align: center;
   padding: 50px;
 
@@ -53,7 +99,7 @@ body{
 
 /* About Section */
 #about {
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   padding: 50px;
   text-align: center;
 }
@@ -65,12 +111,12 @@ body{
 
 /* Skills Section */
 #skills {
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   padding: 50px;
 }
 
 .skills-card {
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   padding: 20px;
   text-align: center;
   border-radius: 5px;
@@ -94,7 +140,7 @@ body{
 /* Projects Section */
 #projects {
   width: 80%;
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -104,7 +150,7 @@ body{
 
 .project-card {
   /* border: 2px solid black; */
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   padding: 10px;
   border-radius: 15px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
@@ -159,7 +205,7 @@ body{
 
 /* Contact Section */
 #contact {
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   padding: 50px;
   text-align: center;
 }
@@ -185,15 +231,15 @@ body{
 
 /* Resume Section */
 #resume {
-  background-color: #0a192f;
+  /* background-color: #0a192f; */
   padding: 50px;
   text-align: center;
 }
 
 #resume-button-1,
 #resume-button-2 {
-  background-color: #333;
-  color: #fff;
+  background-color:aquamarine;
+  color:black;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -211,7 +257,7 @@ body{
 @media (min-width: 1024px) {
   #projects {
     width: 80%;
-    background-color: #0a192f;
+    /* background-color: #0a192f; */
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
