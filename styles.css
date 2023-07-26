@@ -31,8 +31,8 @@
   margin: 50px 50px;
 }
 .typyingName{
-  width: 33%;
-  margin-left: 18%;
+  width: 300px;
+  margin-left: 200px;
  
 }
 
@@ -55,7 +55,7 @@ shape-outside:radial-gradient();
 }
 
 .name:hover {
-  color:black;
+  /* color:black; */
   background-color: rgb(0, 255, 208);
 }
 
@@ -63,24 +63,30 @@ shape-outside:radial-gradient();
 #nav-menu {
   
   position: sticky;
-  /* margin-top: 40px; */
-  /* border: 2px solid red; */
   top: 0%;
-  background-color: black;
-    padding: 30px;
-    z-index: 2;
+  margin: 0%;
+  margin: auto;
+  /* border: 2px solid red; */
+  /* border: 2px solid red; */
+   width: 100%;
+ 
+  
+   background-color: black;
+    padding: 30px; 
+    z-index: 6; 
   }
   
   #nav-menu ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    
+    /* margin: 0;
+    padding: 0; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
   
   #nav-menu li {
-    margin: 0 10px;
+    
   /* border: 2px solid yellow; */
   font-size: xx-large;
     
@@ -90,7 +96,7 @@ shape-outside:radial-gradient();
   #nav-menu a {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
   }
   
   #nav-menu a:hover {
@@ -110,15 +116,21 @@ shape-outside:radial-gradient();
 }
 
 .home-img {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   /* margin-top: 50px; */
   margin-bottom: 20px;
   margin-left: 40%;
+  margin-top: 50px;
   border: 10px solid whitesmoke;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.home-img:hover{
+  
+  transform: scale(1.1);
+
 }
 
 /* adding animation to image */
@@ -131,6 +143,7 @@ shape-outside:radial-gradient();
     transform: translateX(0); /* Move the image back to its original position */
   }
 }
+
 
 /* Apply the animation to the image */
 .home-img{
@@ -155,7 +168,7 @@ shape-outside:radial-gradient();
 }
 #bothAbout{
   display: flex;
-  width: 60%;
+  width: 450px;
   margin: auto;
   /* justify-content: space-between; */
   align-content: space-between;
@@ -174,6 +187,10 @@ margin: 10px;
 text-align: left;
 
 
+}
+.github-stats:hover{
+  transform: scale(1.1);
+  transition-delay:0
 }
 #user-detail-name {
   font-size:xx-large;
@@ -205,7 +222,7 @@ text-align: left;
 }
 
 .skills-card {
-  background-color: #0a192f; 
+  background-color:black; 
   /* border: 2px solid red; */
   padding: 10px;
   text-align: center;
@@ -215,6 +232,8 @@ text-align: left;
 }
 .skills-card:hover{ 
    transform: scale(1.1);
+   border-color: aquamarine;
+   border-width: 10px;
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
@@ -336,17 +355,21 @@ text-align: left;
 }
 
 
-#rbtn2{
+/* #rbtn2{
   /* border:2px solid red; */
-   width: 300px;
-  margin-left:22%;
+   /* width: 300px;
+  margin-left:22%; */
   
-}
+/* }  */
 
 #resume-link-1:hover,
 #resume-link-2:hover {
   background-color:teal;
 }
+#resume-link-1{
+  margin: auto;
+
+ }
 
 /* Media query for large screens */
 @media (min-width: 1024px) {
@@ -361,12 +384,107 @@ text-align: left;
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 820px) {
-  /* Your CSS rules for this screen size range go here */
-  /* For example: */
 
+  /* large screen */
+  /* Target screens with a width between 1024px and 1680px (Medium and Large Laptop/Desktop) */
+@media (min-width: 1024px) and (max-width: 1680px) {
+  /* CSS rules for large screens go here */
+  #bothAbout{
+    display: flex;
+    width: 500px;
+    margin: auto;
+    /* border: 2px solid red; */
+    /* justify-content: space-between; */
+    align-content: space-between;
+  }
 
+  #about{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    gap: 10px;
+  }
 
-  /* Add more styles as per your requirements */
-}
+  .typyingName{
+   
+   width: 450px;
   
+   
+  }
+}
+
+/* medium */
+/* Target screens with a width between 768px and 1023px (Tablet and Small Laptop) */
+@media (min-width: 600px) and (max-width: 1023px) {
+
+ 
+  /* CSS rules for medium screens go here */
+  .home-img {
+    /* border: 2px solid red; */
+    margin: 20px auto;
+  }
+  .typyingName{
+   
+    margin: auto;
+    
+   }
+   #resume-link-2{
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+  
+   }
+   #bothAbout{
+    width: 450px;
+   }
+  
+
+}
+
+/* mobile phones */
+/* Target screens with a width between 320px and 480px (Mobile) */
+@media (min-width: 32px) and (max-width: 600px) {
+  /* CSS rules for small screens go here */
+
+  .home-img {
+    /* border: 2px solid red; */
+    margin: 20px auto;
+  }
+  .typyingName{
+   
+    margin: auto;
+    
+   }
+   #resume-link-2{
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-bottom: 20px;
+  
+   }
+   #nav-menu>ul{
+    /* border: 2px solid red; */
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     margin-right: 0;
+   }
+   #nav-menu{
+    margin-right: 0;
+   }
+   #projects{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+
+   .skills1{
+    display: grid;  
+    grid-template-columns: repeat(2,1fr);
+     gap: 10px;
+  
+    width: 80%;
+    margin: auto;
+  }
+
+
+}
+
+
