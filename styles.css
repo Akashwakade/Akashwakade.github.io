@@ -64,7 +64,7 @@ shape-outside:radial-gradient();
   
   position: sticky;
   /* margin-top: 40px; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   top: 0%;
   background-color: black;
     padding: 30px;
@@ -102,7 +102,7 @@ shape-outside:radial-gradient();
 /* Home Section */
 #home {
   /* background-color: #0a192f; */
-  border: 2px solid red;
+  /* border: 2px solid red; */
   text-align: center;
   padding: 50px;
   /* width: fit-content; */
@@ -161,14 +161,14 @@ shape-outside:radial-gradient();
   align-content: space-between;
 }
 .aboutLeft{
-  border:2px solid red;
+  /* border:2px solid red; */
   width: 45%;
   display: flex;
 text-align: right;
   margin: 10px;
 }
 .aboutRight{
-border:2px solid red;
+/* border:2px solid red; */
 width: 50%;
 margin: 10px;
 text-align: left;
@@ -206,7 +206,7 @@ text-align: left;
 
 .skills-card {
   background-color: #0a192f; 
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 10px;
   text-align: center;
   border-radius: 5px;
@@ -320,17 +320,18 @@ text-align: left;
   text-align: center;
 }
 
-#resume-button-1,
-#resume-button-2 {
+#resume-link-1,
+#resume-link-2 {
   background-color:aquamarine;
   color:black;
+  font-weight:bold;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   margin-right: 100px;
   text-decoration: none;
   cursor: pointer;
- 
+ text-align: right;
   
 }
 
@@ -342,8 +343,8 @@ text-align: left;
   
 }
 
-#resume-button-1:hover,
-#resume-button-2:hover {
+#resume-link-1:hover,
+#resume-link-2:hover {
   background-color:teal;
 }
 
