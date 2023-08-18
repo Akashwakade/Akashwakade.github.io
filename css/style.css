@@ -430,6 +430,8 @@ img {
 .home_title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-1);
+    -webkit-text-stroke: 4px #000;
+    color: transparent;
 }
 
 .home_subtitle {
