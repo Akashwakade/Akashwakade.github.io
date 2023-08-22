@@ -716,20 +716,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- <form action="" method="post" class="contact_form grid">
+                <form name="submit-to-google-sheet"  class="contact_form grid">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="name" class="contact_label">Name</label>
-                            <input name="name" type="text" class="contact_input">
+                            <input name="name" type="text" placeholder="enter your name" class="contact_input">
                         </div>
                         <div class="contact_content">
                             <label for="email" class="contact_label">Email</label>
-                            <input name="email" type="email" class="contact_input" required>
+                            <input name="email" type="email"placeholder="enter your email" class="contact_input" required>
                         </div>
                     </div>
                     <div class="contact_content">
                         <label for="project" class="contact_label">Project</label>
-                        <input name="project" type="text" class="contact_input">
+                        <input name="project" type="text"placeholder="add project" class="contact_input">
                     </div>
                     <div class="contact_content">
                         <label for="message" class="contact_label">Message</label>
@@ -739,9 +739,12 @@
                         <button class="button button-flex" type="submit">Send Message
                             <i class="uil uil-message button_icon"></i>
                         </button>
+                   
                     </div>
-                </form> -->
-            </div>
+                </div> <span id="msg"></span>
+                </form>
+               
+           
         </section>
 
 
@@ -893,6 +896,23 @@ Your browser does not support the video tag.
         sr.reveal('.footer', {});
         sr.reveal('.footer_container>div', { interval: 0 });
     </script>
+    <!-- contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby0dMgWaJE8q2S3RwlYnSiMZ4PST9e2hJNFMfHgPFwYg-kr0ZklLHKV4y513vwzJhGO/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message sent successfully" 
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 </body>
 
