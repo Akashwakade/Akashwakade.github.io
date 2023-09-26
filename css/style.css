@@ -413,7 +413,7 @@ img {
     fill: var(--first-color);
 }
 .home_blob-img {
-    width: 175px;
+    width: 200px;
     transition: 0.5s;
 }
 .home_blob-img:hover {
@@ -849,6 +849,7 @@ img {
     width: 100%;
     /* background-color: var(--input-color); */
     background-color:#b9732f;
+    color:rgb(175, 245, 13);
    
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
