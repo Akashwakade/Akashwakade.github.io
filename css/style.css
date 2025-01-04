@@ -85,6 +85,7 @@ body.dark-theme {
     --container-color: hsl(var(var(--hue-color), 29%, 16%));
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+   
 }
 
 /* ========== Button Dark/Light ========== */

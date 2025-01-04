@@ -113,6 +113,9 @@ window.addEventListener('scroll', scrollUp)
 
 
 /*==================== DARK LIGHT THEME ====================*/
+// changing color of form to white in dark theme
+
+
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
